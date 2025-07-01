@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        p { font-size: 1.2rem; }
+        .status { 
+            background: #2ecc71; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Success!</h1>
+        <p th:text="${message}">Welcome Message</p>
+        <div class="status">
+            ✅ Spring Boot is running in Gitpod!<br>
+            ✅ VS Code Java extensions are loaded!<br>
+            ✅ Ready to start coding!
+        </div>
+        <p><strong>Next:</strong> Open VS Code and start building your API services!</p>
+    </div>
+</body>
+</html>
